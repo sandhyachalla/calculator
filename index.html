@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+        <h1>Calculator</h1>
+
+        <div class="calculator">
+          <label for="mathvalue"></label>
+            <input type="text" name="mathvalue" id="mathvalue">
+            <table>
+                <tr>
+                    <td><button onclick= "mathvalue.value+='('">(</button></td>
+                    <td><button onclick= "mathvalue.value+=')'">)</button></td>
+                    <td><button onclick= "mathvalue.value+='%'">%</button></td>
+                    <td><button onclick= "mathvalue.value =mathvalue.value.slice(0,-1)">DE</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="mathvalue.value+='7'">7</button></td>
+                    <td><button onclick= "mathvalue.value+='8'">8</button></td>
+                    <td><button onclick= "mathvalue.value+='9'">9</button></td>
+                    
+                    <td><button onclick= "mathvalue.value+='*'">X</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick= "mathvalue.value+='4'">4</button></td>
+                    <td><button onclick= "mathvalue.value+='5'">5</button></td>
+                    <td><button onclick= "mathvalue.value+='6'">6</button></td>
+                    <td><button onclick= "mathvalue.value+='-'">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick= "mathvalue.value+='1'">1</button></td>
+                    <td><button onclick= "mathvalue.value+='2'">2</button></td>
+                    <td><button onclick= "mathvalue.value+='3'">3</button></td>
+                    <td><button onclick= "mathvalue.value+='+'">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick= "mathvalue.value+='0'">0</button></td>
+                    <td><button onclick= "mathvalue.value+='.'">.</button></td>
+                    <td><button onclick= "mathvalue.value+='/'" >/</button></td>
+                    <td><button onclick= "mathvalue.value=eval(mathvalue.value)" >=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
